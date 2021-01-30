@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_submission_pemula/main_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -78,7 +79,15 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 20),
                 FloatingActionButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MainPage(
+                            name: _nameController.text,
+                          ),
+                        ));
+                  },
                   elevation: 0,
                   child: Icon(
                     Icons.arrow_forward,
