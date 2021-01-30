@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_submission_pemula/util/constant.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DetailPage extends StatelessWidget {
@@ -7,6 +8,7 @@ class DetailPage extends StatelessWidget {
   final String danceDescription;
   final String danceImage;
   final List<String> danceImages;
+  final int danceHeroIndex;
 
   const DetailPage(
       {Key key,
@@ -14,7 +16,8 @@ class DetailPage extends StatelessWidget {
       this.dancePlaceOfOrigin,
       this.danceDescription,
       this.danceImage,
-      this.danceImages})
+      this.danceImages,
+      this.danceHeroIndex})
       : super(key: key);
 
   @override
@@ -26,7 +29,10 @@ class DetailPage extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Image.network(danceImage),
+                Hero(
+                  tag: "danceImage $danceHeroIndex",
+                  child: Image.network(danceImage),
+                ),
                 SafeArea(
                   child: IconButton(
                     icon: Icon(
@@ -41,37 +47,43 @@ class DetailPage extends StatelessWidget {
               ],
             ),
             Container(
-              margin: EdgeInsets.only(top: 16),
-              child: Text(
-                danceName,
-                style: GoogleFonts.poppins(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
+              margin: EdgeInsets.only(top: mMargin),
+              child: Hero(
+                tag: "danceName $danceHeroIndex",
+                child: Text(
+                  danceName,
+                  style: GoogleFonts.poppins(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                textAlign: TextAlign.center,
               ),
             ),
             Container(
-              child: Text(
-                "From $dancePlaceOfOrigin",
-                style: GoogleFonts.poppins(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
+              child: Hero(
+                tag: "danceFrom $danceHeroIndex",
+                child: Text(
+                  "From $dancePlaceOfOrigin",
+                  style: GoogleFonts.poppins(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                textAlign: TextAlign.center,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(mPadding),
               child: Container(
-                padding: EdgeInsets.all(8),
+                padding: EdgeInsets.all(mSmallPadding),
                 decoration: BoxDecoration(
-                    color: Color(0xffF0F0F0),
+                    color: mGreyCard,
                     borderRadius: BorderRadius.circular(16.0)),
                 child: Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 16, left: 16),
+                      margin: EdgeInsets.only(top: mMargin, left: mMargin),
                       child: Text(
                         "Description : ",
                         style: GoogleFonts.poppins(
@@ -81,7 +93,8 @@ class DetailPage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 16, left: 16, right: 16),
+                      margin: EdgeInsets.only(
+                          top: mMargin, left: mMargin, right: mMargin),
                       child: Text(
                         danceDescription,
                         style: GoogleFonts.poppins(
@@ -100,12 +113,12 @@ class DetailPage extends StatelessWidget {
             ),
             Container(
                 height: 150,
-                margin: EdgeInsets.only(left: 16, right: 16),
+                margin: EdgeInsets.only(left: mMargin, right: mMargin),
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: danceImages.map((image) {
                     return Padding(
-                      padding: EdgeInsets.all(4),
+                      padding: EdgeInsets.all(mSmallPadding),
                       child: ClipRRect(
                         child: Image.network(image),
                         borderRadius: BorderRadius.circular(10),

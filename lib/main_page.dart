@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_submission_pemula/detail_page.dart';
 import 'package:flutter_submission_pemula/model/traditional_dance_data.dart';
+import 'package:flutter_submission_pemula/util/constant.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MainPage extends StatelessWidget {
@@ -19,7 +20,7 @@ class MainPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(mPadding),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -65,14 +66,15 @@ class MainPage extends StatelessWidget {
                                   danceImage: traditionalDanceList[index].image,
                                   danceImages:
                                       traditionalDanceList[index].images,
+                                  danceHeroIndex: index,
                                 );
                               },
                             ),
                           );
                         },
                         child: Container(
-                          padding: EdgeInsets.all(8),
-                          margin: EdgeInsets.only(bottom: 16),
+                          padding: EdgeInsets.all(mMedPadding),
+                          margin: EdgeInsets.only(bottom: mMargin),
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.black12,
@@ -87,9 +89,12 @@ class MainPage extends StatelessWidget {
                                   children: [
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
-                                      child: Image.network(
-                                        traditionalDanceList[index].image,
-                                        width: 120,
+                                      child: Hero(
+                                        tag: "danceImage $index",
+                                        child: Image.network(
+                                          traditionalDanceList[index].image,
+                                          width: 120,
+                                        ),
                                       ),
                                     ),
                                     SizedBox(
@@ -99,19 +104,25 @@ class MainPage extends StatelessWidget {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Text(
-                                          traditionalDanceList[index].name,
-                                          style: GoogleFonts.poppins(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w600,
+                                        Hero(
+                                          tag: "danceName $index",
+                                          child: Text(
+                                            traditionalDanceList[index].name,
+                                            style: GoogleFonts.poppins(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w600,
+                                            ),
                                           ),
                                         ),
                                         SizedBox(
                                           height: 10,
                                         ),
-                                        Text(
-                                          "From ${traditionalDanceList[index].placeOfOrigin}",
-                                          style: GoogleFonts.poppins(),
+                                        Hero(
+                                          tag: "danceFrom $index",
+                                          child: Text(
+                                            "From ${traditionalDanceList[index].placeOfOrigin}",
+                                            style: GoogleFonts.poppins(),
+                                          ),
                                         )
                                       ],
                                     )
