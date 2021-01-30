@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_submission_pemula/detail_page.dart';
 import 'package:flutter_submission_pemula/model/traditional_dance_data.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'model/traditional_dance.dart';
 
 class MainPage extends StatelessWidget {
   final String name;
@@ -53,6 +52,23 @@ class MainPage extends StatelessWidget {
                       return InkWell(
                         onTap: () {
                           //do something
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return DetailPage(
+                                  danceName: traditionalDanceList[index].name,
+                                  dancePlaceOfOrigin:
+                                      traditionalDanceList[index].placeOfOrigin,
+                                  danceDescription:
+                                      traditionalDanceList[index].description,
+                                  danceImage: traditionalDanceList[index].image,
+                                  danceImages:
+                                      traditionalDanceList[index].images,
+                                );
+                              },
+                            ),
+                          );
                         },
                         child: Container(
                           padding: EdgeInsets.all(8),

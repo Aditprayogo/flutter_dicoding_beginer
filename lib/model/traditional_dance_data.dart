@@ -8,6 +8,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Gayo",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Saman-Meuseukat-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://seringjalan.com/wp-content/uploads/2020/04/02-tari-saman.jpg",
+      "https://seringjalan.com/wp-content/uploads/2020/04/01-tari-saman.jpg",
+      "https://seringjalan.com/wp-content/uploads/2020/04/03-tari-saman.jpg"
+    ],
   ),
   TraditionalDance(
     name: "Tar Kecak",
@@ -16,6 +21,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Bali",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Kecak-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://asset.kompas.com/crops/P-lCGCwk1oxZuEHSriQh14TDvbY=/0x11:1280x865/750x500/data/photo/2020/08/23/5f42709195b70.jpg",
+      "https://www.pegipegi.com/travel/wp-content/uploads/2018/03/shutterstock_409292383.jpg",
+      "https://cdn.idntimes.com/content-images/post/20181114/kceak-fff098515877809ce5fbad20063c4f95_600x400.jpg"
+    ],
   ),
   TraditionalDance(
     name: "Tari Sekapur Sirih",
@@ -24,6 +34,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Jambi, Riau",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Sekapur-Sirih-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://cdn-2.tstatic.net/batam/foto/bank/images/tarian-sekapur-sirih-ditampilan-saat-dibukanya-musabaqoh-tilawatil-quran-mtq.jpg",
+      "https://seringjalan.com/wp-content/uploads/2020/02/Tari-sekapur-sirih-Sumatera-816x544.jpg",
+      "https://4.bp.blogspot.com/-Dflo3LmUWfs/VlCUt8cIUnI/AAAAAAAAB9g/ejCUfatQsPE/w1200-h630-p-k-no-nu/tari%2Bsekapur%2Bsirih.JPG",
+    ],
   ),
   TraditionalDance(
     name: "Tari Jaipong",
@@ -32,6 +47,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Bandung, West Java",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Jaipong-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://assets.pikiran-rakyat.com/crop/0x0:0x0/750x500/photo/fixindonesia/2020/03/Untitled-111.png",
+      "https://tedas.id/wp-content/uploads/2020/04/10.-tari-jaipong-6-800x445.jpg",
+      "https://i0.wp.com/rimbakita.com/wp-content/uploads/2019/09/tari-jaipong.jpg",
+    ],
   ),
   TraditionalDance(
     name: "Tari Reog Ponorogo",
@@ -40,6 +60,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Reog, East Java",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Reog-Ponorogo-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://seringjalan.com/wp-content/uploads/2020/04/Reog-Ponorogo-1200x771.jpg",
+      "https://backpackerjakarta.com/wp-content/uploads/2017/03/reog-ponorogo.jpg",
+      "https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/intisarifoto/original/57248_reog-ponorogo.jpg",
+    ],
   ),
   TraditionalDance(
     name: "Tari Topeng Betawi",
@@ -48,6 +73,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Jakarta",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Topeng-Betawi-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://pariwisataindonesia.id/wp-content/uploads/2020/09/Tari-topeng-betawi-foto-travelinkmagz.com_.jpg",
+      "https://lh3.googleusercontent.com/proxy/obP1VN1leCnAfCJHbcPUPLPVbNRAL0c77XdRhhWgJU8WMM4rulPsqibzhyJ8kaKnSK0YA92Uhx_ZzpEbESY1mWYQusMSn-fAh4BGVp28Bhjs0Rt6borEQ_YZ5fyrF1PBPKbw",
+      "https://genpi.id/wp-content/uploads/2020/10/image-116.png"
+    ],
   ),
   TraditionalDance(
     name: "Tari Kipas Pakarena",
@@ -56,6 +86,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Gowa, South Sulawesi",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Kipas-Pakarena-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://www.indonesiakaya.com/uploads/_images_gallery/Sulawesi_Selatan_-_Penari_Tari_Kipas_Pakarena_-_IE.jpg",
+      "https://seringjalan.com/wp-content/uploads/2020/04/Ciri-Khas-dan-Keunikan-Tari-Pakarena-1024x1024.jpg",
+      "https://www.dictio.id/uploads/db3342/original/3X/3/9/39c885ae6e63c708f3c0f474dd4c8435d42823b9.jpeg"
+    ],
   ),
   TraditionalDance(
     name: "Tari Bendrong Lesung",
@@ -64,6 +99,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Banten",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Bendrong-Lesung-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://www.dictio.id/uploads/db3342/original/3X/a/5/a5b91f488e1ca7c22e529c0c905562c94b0c4fdf.jpeg",
+      "https://pariwisataindonesia.id/wp-content/uploads/2020/11/tari-bendrong-lesung-by-majalahterascom-640x518.jpg",
+      "https://i.ytimg.com/vi/dAUWPbj1yik/hqdefault.jpg",
+    ],
   ),
   TraditionalDance(
     name: "Tari Piring",
@@ -72,6 +112,11 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Minangkabau",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Piring-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://blogkulo.com/wp-content/uploads/2017/11/Tari-Piring-Minangkabau.jpg",
+      "https://backpanel.kemlu.go.id/PublishingImages/STpiring/TP3.JPEG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tari_Piring_di_Pesisir_Selatan.jpg/1200px-Tari_Piring_di_Pesisir_Selatan.jpg",
+    ],
   ),
   TraditionalDance(
     name: "Tari Pendet",
@@ -80,5 +125,10 @@ List<TraditionalDance> traditionalDanceList = [
     placeOfOrigin: "Bali",
     image:
         "https://cdnaz.cekaja.com/media/2020/03/Tari-Pendet-Tari-Tradisional-Asal-Indonesia.jpg",
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Tari_Pendet.jpg",
+      "https://blogkulo.com/wp-content/uploads/2017/11/Tari-Pendet.jpg",
+      "https://4.bp.blogspot.com/-3khQMKDsuJk/Vfl_31o02DI/AAAAAAAABps/8zmP26VPAAE/w1200-h630-p-k-no-nu/tari%2Bpendet.jpg",
+    ],
   ),
 ];
